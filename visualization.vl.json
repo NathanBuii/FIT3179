@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "description": "Bar chart with text labels. Apply scale padding to make the frame cover the labels.",
+  "description": "A simple bar chart with embedded data.",
   "data": {
     "values": [
       {
@@ -14,40 +14,46 @@
       {
         "a": "C",
         "b": 43
+      },
+      {
+        "a": "D",
+        "b": 91
+      },
+      {
+        "a": "E",
+        "b": 81
+      },
+      {
+        "a": "F",
+        "b": 53
+      },
+      {
+        "a": "G",
+        "b": 19
+      },
+      {
+        "a": "H",
+        "b": 87
+      },
+      {
+        "a": "I",
+        "b": 52
       }
     ]
   },
+  "mark": "bar",
   "encoding": {
-    "y": {
-      "field": "a",
-      "type": "nominal"
-    },
     "x": {
-      "field": "b",
-      "type": "quantitative",
-      "scale": {
-        "padding": 10
+      "field": "a",
+      "type": "nominal",
+      "axis": {
+        "labelAngle": 0
       }
+    },
+    "y": {
+      "field": "b",
+      "type": "quantitative"
     }
   },
-  "layer": [
-    {
-      "mark": "bar"
-    },
-    {
-      "mark": {
-        "type": "text",
-        "align": "left",
-        "baseline": "middle",
-        "dx": 3
-      },
-      "encoding": {
-        "text": {
-          "field": "b",
-          "type": "quantitative"
-        }
-      }
-    }
-  ],
   "config": {}
 }
