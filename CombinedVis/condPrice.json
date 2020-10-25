@@ -12,6 +12,13 @@
   "encoding": {
     "x": {"field": "year", "type": "quantitative", "scale": {"zero": false}},
     "y": {"field": "price", "type": "quantitative", "scale": {"type": "log"}},
+    "tooltip": [
+      {"field": "manufacturer", "type": "nominal"},
+      {"field": "model", "type": "nominal"},
+      {"field": "year", "type": "quantitative"},
+      {"field": "price", "type": "quantitative", "format": ","},
+      {"field": "condition", "type": "nominal"}
+    ],
     "color": {
       "field": "condition",
       "type": "nominal",
