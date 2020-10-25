@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 800,
+  "height": 600,
+  "title": "Car Condition by Year",
+  "data": {
+    "url": "https://raw.githubusercontent.com/NathanBuii/FIT3179/main/vehicles_clean_SMALL.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [{"filter": "datum.condition != 'NA'"}],
+  "mark": "circle",
+  "encoding": {
+    "x": {"field": "year", "type": "quantitative", "scale": {"zero": false}},
+    "y": {"field": "price", "type": "quantitative", "scale": {"type": "log"}},
+    "color": {
+      "field": "condition",
+      "type": "nominal",
+      "scale": {
+        "domain": ["salvage", "fair", "good", "excellent", "like new", "new"],
+        "range": [
+          "#8B0000",
+          "#fa8072",
+          "#fddbc7",
+          "#d1e5f0",
+          "#67a9cf",
+          "#2166ac"
+        ]
+      }
+    }
+  },
+  "config": {}
+}
