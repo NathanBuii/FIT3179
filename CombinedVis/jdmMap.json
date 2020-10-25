@@ -50,8 +50,8 @@
         "color": {
           "field": "jdm",
           "type": "nominal",
-          "legend": {"orient": "left"},
-          "scale": {"range": ["crimson", "lightskyblue"]}
+          "legend": {"orient": "right"},
+          "scale": {"range": ["teal", "lightpink"]}
         },
         "size": {
           "field": "price",
