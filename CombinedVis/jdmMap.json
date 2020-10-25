@@ -1,0 +1,77 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 800,
+  "height": 600,
+  "title": "JDM Craiglist Listings in USA",
+  "projection": {"type": "albersUsa"},
+  "data": {
+    "url": "https://raw.githubusercontent.com/NathanBuii/FIT3179/main/vehicles_clean_SMALL.csv",
+    "format": {"type": "csv"}
+  },
+  "params": [
+    {
+      "name": "JDM_selection",
+      "bind": {
+        "input": "select",
+        "options": [null, "JDM", "Non-JDM"],
+        "labels": ["Show All", "JDM", "Non-JDM"],
+        "name": "Market Selection: "
+      }
+    },
+    {
+      "name": "Price_Above",
+      "value": 60000,
+      "bind": {
+        "input": "range",
+        "min": 0,
+        "max": 200000,
+        "step": 20000,
+        "name": "Minimum Price: "
+      }
+    }
+  ],
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/NathanBuii/FIT3179/main/usa.topojson",
+        "format": {"type": "topojson", "feature": "custom"}
+      },
+      "mark": {"type": "geoshape", "fill": "gainsboro", "stroke": "white"}
+    },
+    {
+      "transform": [
+        {"filter": "JDM_selection == null || datum.jdm == JDM_selection"},
+        {"filter": "datum.price > Price_Above"}
+      ],
+      "mark": {"type": "circle", "fillOpacity": 0.5},
+      "encoding": {
+        "longitude": {"field": "long", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"},
+        "color": {
+          "field": "jdm",
+          "type": "nominal",
+          "legend": {"orient": "left"},
+          "scale": {"range": ["crimson", "lightskyblue"]}
+        },
+        "size": {
+          "field": "price",
+          "type": "quantitative",
+          "scale": {
+            "type": "threshold",
+            "domain": [1000, 10000, 100000, 1000000],
+            "range": [5, 20, 50, 150, 500]
+          },
+          "legend": {"format": ".1s"}
+        },
+        "tooltip": [
+          {"field": "manufacturer", "type": "nominal"},
+          {"field": "model", "type": "nominal"},
+          {"field": "year", "type": "quantitative"},
+          {"field": "price", "type": "quantitative", "format": ","},
+          {"field": "condition", "type": "nominal"}
+        ]
+      }
+    }
+  ],
+  "config": {}
+}
