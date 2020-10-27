@@ -1,0 +1,50 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 400,
+  "height": 300,
+  "title": "Car Condition by Year",
+  "data": {
+    "url": "https://raw.githubusercontent.com/NathanBuii/FIT3179/main/vehicles_clean_SMALL.csv",
+    "format": {"type": "csv"}
+  },
+  "params": [
+    {
+      "name": "JDM_selection",
+      "bind": {
+        "input": "select",
+        "options": [null, "JDM", "Non-JDM"],
+        "labels": ["Show All", "JDM", "Non-JDM"],
+        "name": "Market Selection: "
+      }
+    }
+  ],
+  "transform": [
+    {"filter": "JDM_selection == null || datum.jdm == JDM_selection"},
+    {"filter": "datum.condition != 'NA'"}
+  ],
+  "mark": {"type": "circle", "fillOpacity": 0.2},
+  "encoding": {
+    "x": {"field": "year", "type": "quantitative", "scale": {"zero": false}},
+    "y": {"field": "price", "type": "quantitative", "scale": {"type": "log"}},
+    "tooltip": [
+      {"field": "manufacturer", "type": "nominal"},
+      {"field": "model", "type": "nominal"},
+      {"field": "year", "type": "quantitative"},
+      {"field": "price", "type": "quantitative", "format": ","},
+      {"field": "condition", "type": "nominal"}
+    ],
+    "color": {
+      "field": "jdm",
+      "type": "nominal",
+      "scale": {"domain": ["JDM", "Non-JDM"], "range": ["teal", "#fc8d62"]}
+    },
+    "facet": {
+      "field": "condition",
+      "type": "nominal",
+      "sort": ["salvage", "fair", "good", "excellent", "like new", "new"],
+      "columns": 2
+    }
+  },
+  "resolve": {"axis": {"x": "independent", "y": "independent"}},
+  "config": {}
+}
