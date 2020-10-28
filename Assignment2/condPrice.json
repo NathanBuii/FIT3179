@@ -4,7 +4,7 @@
   "height": 200,
   "title": "Car Condition by Year",
   "data": {
-    "url": "https://raw.githubusercontent.com/NathanBuii/FIT3179/main/vehicles_clean_SMALL.csv",
+    "url": "https://dl.dropbox.com/s/2xd2xtehc8etf2c/vehicles_clean.csv",
     "format": {"type": "csv"}
   },
   "params": [
@@ -19,29 +19,29 @@
     }
   ],
   "transform": [
-    {"filter": "JDM_selection == null || datum.jdm == JDM_selection"},
-    {"filter": "datum.condition != 'NA'"}
+    {"filter": "JDM_selection == null || datum.JDM == JDM_selection"},
+    {"filter": "datum.Condition != 'NA'"}
   ],
-  "mark": {"type": "circle", "fillOpacity": 0.2},
+  "mark": {"type": "point", "strokeOpacity": 0.2},
   "encoding": {
-    "x": {"field": "year", "type": "quantitative", "scale": {"zero": false}},
-    "y": {"field": "price", "type": "quantitative", "scale": {"type": "log"}},
+    "x": {"field": "Year", "type": "quantitative", "scale": {"zero": false}},
+    "y": {"field": "Price", "type": "quantitative", "scale": {"type": "log"}},
     "tooltip": [
-      {"field": "manufacturer", "type": "nominal"},
-      {"field": "model", "type": "nominal"},
-      {"field": "year", "type": "quantitative"},
-      {"field": "price", "type": "quantitative", "format": ","},
-      {"field": "condition", "type": "nominal"}
+      {"field": "Manufacturer", "type": "nominal"},
+      {"field": "Model", "type": "nominal"},
+      {"field": "Year", "type": "quantitative"},
+      {"field": "Price", "type": "quantitative", "format": ","},
+      {"field": "Condition", "type": "nominal"}
     ],
     "color": {
-      "field": "jdm",
+      "field": "JDM",
       "type": "nominal",
       "scale": {"domain": ["JDM", "Non-JDM"], "range": ["teal", "#fc8d62"]}
     },
     "facet": {
-      "field": "condition",
+      "field": "Condition",
       "type": "nominal",
-      "sort": ["salvage", "fair", "good", "excellent", "like new", "new"],
+      "sort": ["Salvage", "Fair", "Good", "Excellent", "Like new", "New"],
       "columns": 2
     }
   },

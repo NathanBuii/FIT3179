@@ -1,0 +1,60 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 600,
+  "height": 400,
+  "title": "Price Distribution by JDM Manufacturer",
+  "data": {
+    "url": "https://raw.githubusercontent.com/NathanBuii/FIT3179/main/Assignment2/vehicles_clean_SMALL.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [{"filter": "datum.JDM == 'JDM'"}],
+  "mark": {"type": "boxplot", "extent": "min-max"},
+  "encoding": {
+    "x": {"field": "Price", "type": "quantitative", "scale": {"zero": true}},
+    "y": {
+      "field": "Manufacturer",
+      "type": "nominal",
+      "sort": [
+        "Honda",
+        "Acura",
+        "Nissan",
+        "Infiniti",
+        "Toyota",
+        "Lexus",
+        "Mazda",
+        "Mitsubishi",
+        "Subaru"
+      ]
+    },
+    "color": {
+      "field": "Manufacturer",
+      "type": "nominal",
+      "legend": null,
+      "scale": {
+        "domain": [
+          "Honda",
+          "Acura",
+          "Nissan",
+          "Infiniti",
+          "Toyota",
+          "Lexus",
+          "Mazda",
+          "Mitsubishi",
+          "Subaru"
+        ],
+        "range": [
+          "#F14F04",
+          "#FD9E72",
+          "#CC0058",
+          "#FF85BA",
+          "#245501",
+          "#AAD576",
+          "#FFBE0B",
+          "#FD0D21",
+          "#2166ac"
+        ]
+      }
+    }
+  },
+  "config": {}
+}

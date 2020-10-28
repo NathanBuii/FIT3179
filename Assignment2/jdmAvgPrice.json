@@ -1,0 +1,86 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 600,
+  "height": 400,
+  "title": "Price Distribution by JDM Manufacturer",
+  "data": {
+    "url": "https://raw.githubusercontent.com/NathanBuii/FIT3179/main/Assignment2/vehicles_clean_SMALL.csv"
+  },
+  "transform": [
+    {"filter": "datum.Year > 1980 && datum.JDM == 'JDM'"},
+    {"timeUnit": "year", "field": "Year", "as": "year"},
+    {
+      "window": [{"op": "mean", "field": "Price", "as": "Average_Price"}],
+      "sort": [{"field": "Year", "order": "ascending"}],
+      "ignorePeers": false,
+      "frame": [null, 0]
+    }
+  ],
+  "layer": [
+    {
+      "selection": {
+        "continent_highlight": {
+          "type": "multi",
+          "fields": ["Manufacturer"],
+          "bind": "legend"
+        }
+      },
+      "mark": "circle",
+      "encoding": {
+        "x": {"timeUnit": "year", "field": "Year"},
+        "y": {"field": "Price", "type": "quantitative"},
+        "color": {
+          "field": "Manufacturer",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Honda",
+              "Acura",
+              "Nissan",
+              "Infiniti",
+              "Toyota",
+              "Lexus",
+              "Mazda",
+              "Mitsubishi",
+              "Subaru"
+            ],
+            "range": [
+              "#F14F04",
+              "#FD9E72",
+              "#CC0058",
+              "#FF85BA",
+              "#245501",
+              "#AAD576",
+              "#FFBE0B",
+              "#FD0D21",
+              "#2166ac"
+            ]
+          }
+        },
+        "opacity": {
+          "condition": {"selection": "continent_highlight", "value": 0.3},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "Manufacturer", "type": "nominal"},
+          {"field": "Model", "type": "nominal"},
+          {"field": "Year", "type": "quantitative"},
+          {"field": "Price", "type": "quantitative", "format": ","},
+          {"field": "Condition", "type": "nominal"}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "line", "color": "Black"},
+      "encoding": {
+        "x": {"timeUnit": "year", "field": "Year", "title": "Model Year"},
+        "y": {
+          "field": "Average_Price",
+          "type": "quantitative",
+          "title": "Price"
+        }
+      }
+    }
+  ],
+  "config": {}
+}

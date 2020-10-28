@@ -5,7 +5,7 @@
   "title": "JDM Craiglist Listings in USA",
   "projection": {"type": "albersUsa"},
   "data": {
-    "url": "https://raw.githubusercontent.com/NathanBuii/FIT3179/main/vehicles_clean_SMALL.csv",
+    "url": "https://dl.dropbox.com/s/2xd2xtehc8etf2c/vehicles_clean.csv",
     "format": {"type": "csv"}
   },
   "params": [
@@ -40,37 +40,37 @@
     },
     {
       "transform": [
-        {"filter": "JDM_selection == null || datum.jdm == JDM_selection"},
-        {"filter": "datum.price > Price_Above"}
+        {"filter": "JDM_selection == null || datum.JDM == JDM_selection"},
+        {"filter": "datum.Price > Price_Above"}
       ],
       "mark": {"type": "circle", "fillOpacity": 0.3},
       "encoding": {
-        "longitude": {"field": "long", "type": "quantitative"},
-        "latitude": {"field": "lat", "type": "quantitative"},
+        "longitude": {"field": "Long", "type": "quantitative"},
+        "latitude": {"field": "Lat", "type": "quantitative"},
         "color": {
-          "field": "jdm",
+          "field": "JDM",
           "type": "nominal",
           "legend": {"orient": "right"},
           "scale": {"domain": ["JDM", "Non-JDM"], "range": ["teal", "#fc8d62"]}
         },
         "size": {
-          "field": "price",
+          "field": "Price",
           "type": "quantitative",
           "scale": {
             "type": "threshold",
-            "domain": [1000, 10000, 100000, 1000000],
-            "range": [5, 20, 50, 150, 500]
+            "domain": [10000, 100000, 1000000],
+            "range": [15, 50, 150, 500]
           },
           "legend": {"format": ".1s"}
         },
         "tooltip": [
-          {"field": "manufacturer", "type": "nominal"},
-          {"field": "model", "type": "nominal"},
-          {"field": "year", "type": "quantitative"},
-          {"field": "transmission", "type": "nominal"},
-          {"field": "drive", "type": "nominal"},
-          {"field": "price", "type": "quantitative", "format": ","},
-          {"field": "condition", "type": "nominal"}
+          {"field": "Manufacturer", "type": "nominal"},
+          {"field": "Model", "type": "nominal"},
+          {"field": "Year", "type": "quantitative"},
+          {"field": "Transmission", "type": "nominal"},
+          {"field": "Drive", "type": "nominal"},
+          {"field": "Price", "type": "quantitative", "format": ","},
+          {"field": "Condition", "type": "nominal"}
         ]
       }
     }
