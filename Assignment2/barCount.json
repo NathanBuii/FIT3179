@@ -1,0 +1,26 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 800,
+  "height": 100,
+  "title": "Number of Craigslist Car Listings in USA",
+  "description": "Bar chart with text labels. Apply scale padding to make the frame cover the labels.",
+  "data": {"values": [{"a": "JDM", "b": 64621}, {"a": "Non-JDM", "b": 167316}]},
+  "encoding": {
+    "y": {"field": "a", "type": "nominal"},
+    "x": {"field": "b", "type": "quantitative", "scale": {"padding": 10}},
+    "color": {
+      "field": "a",
+      "type": "nominal",
+      "scale": {"domain": ["JDM", "Non-JDM"], "range": ["teal", "#fc8d62"]},
+      "legend": null
+    }
+  },
+  "layer": [
+    {"mark": "bar"},
+    {
+      "mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 3},
+      "encoding": {"text": {"field": "b", "type": "quantitative"}}
+    }
+  ],
+  "config": {}
+}
