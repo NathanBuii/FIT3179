@@ -35,34 +35,39 @@
   vegaEmbed('#bubble_map', vis1).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
+ 
   
   var vis2 = "barCount.json";
   
-  vegaEmbed('#bar_count', vis1).then(function(result) {
+  vegaEmbed('#bar_count', vis2).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
+ 
   
   var vis3 = "condPrice.json";
   
-  vegaEmbed('#scatter_plot', vis2).then(function(result) {
+  vegaEmbed('#scatter_plot', vis3).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
+ 
   
   var vis4 = "jdmBoxplot.json";
   
-  vegaEmbed('#jdm_boxplot', vis2).then(function(result) {
+  vegaEmbed('#jdm_boxplot', vis4).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);  
  
+  
   var vis5 = "jdmAvgPrice.json";
   
-  vegaEmbed('#jdm_avgprice', vis2).then(function(result) {
+  vegaEmbed('#jdm_avgprice', vis5).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
+ 
   
   var vis6 = "jdmTopAvg.json";
   
-  vegaEmbed('#jdm_topavg', vis2).then(function(result) {
+  vegaEmbed('#jdm_topavg', vis6).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>
