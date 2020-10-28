@@ -15,11 +15,18 @@
 
 <h1>Performance of Japanese Domestic Market (JDM) Cars on Craigslist</h1>
 
-<h2>This is the first visualisation</h2>
+<h2>What's the JDM Scene Like In the USA?</h2>
 <div id="bubble_map"></div>
-
+<div id="bar_count"></div>
+  
 <h2>This is the second visualisation</h2>
 <div id="scatter_plot"></div>
+  
+<div id="jdm_boxplot"></div>
+  
+<div id="jdm_avgprice"></div>
+  
+<div id="jdm_topavg"></div>
 
 <script type="text/javascript">
   
@@ -29,9 +36,33 @@
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
   
-  var vis2 = "condPrice.json";
+  var vis2 = "barCount.json";
+  
+  vegaEmbed('#bar_count', vis1).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
+  var vis3 = "condPrice.json";
   
   vegaEmbed('#scatter_plot', vis2).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
+  var vis4 = "jdmBoxplot.json";
+  
+  vegaEmbed('#jdm_boxplot', vis2).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);  
+ 
+  var vis5 = "jdmAvgPrice.json";
+  
+  vegaEmbed('#jdm_avgprice', vis2).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
+  var vis6 = "jdmTopAvg.json";
+  
+  vegaEmbed('#jdm_topavg', vis2).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>
