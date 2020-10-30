@@ -1,102 +1,51 @@
-"","Price","JDM","State","StateFull","Manufacturer","Model","Year"
-"1",24900,"JDM","AK","Alaska","Toyota","Tacoma",2018
-"2",42888,"JDM","AL","Alabama","Nissan","Armada",2019
-"3",55702,"JDM","AR","Arkansas","Toyota","Gr Supra",2020
-"4",56995,"JDM","AZ","Arizona","Toyota","Tundra Lifted Limited Crew Max 4x4 Iforce V8",2019
-"5",92021,"JDM","CA","California","Lexus","Es350",2007
-"6",63979,"JDM","CO","Colorado","Toyota","Sienna Se",2017
-"7",47590,"JDM","CT","Connecticut","Toyota","Tacoma Double Cab Trd Pro",2019
-"8",50000,"JDM","DC","District of Columbia","Lexus","Rx450h",2020
-"9",43995,"JDM","DE","Delaware","Acura","Mdx",2020
-"10",69900,"JDM","FL","Florida","Lexus","Lc500 Coupe",2018
-"11",45998,"JDM","GA","Georgia","Toyota","Tundra",2018
-"12",31000,"JDM","HI","Hawaii","Toyota","Tacoma Double Cab V6 4 X",2015
-"13",99000,"JDM","IA","Iowa","Toyota","Tundra",2017
-"14",52999,"JDM","ID","Idaho","Toyota","Lifted Tundra Platinum",2017
-"15",54785,"JDM","IL","Illinois","Toyota","Gr Supra",2020
-"16",90300,"JDM","IN","Indiana","Nissan","Gtr",2018
-"17",54861,"JDM","KS","Kansas","Toyota","Gr Supra",2020
-"18",53980,"JDM","KY","Kentucky","Toyota","Supra Turbo",2020
-"19",68991,"JDM","LA","Louisiana","Nissan","Gt-R",2016
-"20",43590,"JDM","MA","Massachusetts","Lexus","Rc 300 Coupe 2d",2019
-"21",47590,"JDM","MD","Maryland","Toyota","Tacoma Double Cab Trd Pro",2019
-"22",55000,"JDM","ME","Maine","Toyota",NA,2019
-"23",50995,"JDM","MI","Michigan","Toyota","Tundra",2016
-"24",82988,"JDM","MN","Minnesota","Lexus","Lc 500",2018
-"25",55702,"JDM","MO","Missouri","Toyota","Gr Supra",2020
-"26",41500,"JDM","MS","Mississippi","Toyota","Tundra",2017
-"27",75000,"JDM","MT","Montana","Toyota","Tundra",2015
-"28",85988,"JDM","NC","North Carolina","Nissan","Gt-R",2017
-"29",38000,"JDM","ND","North Dakota","Honda","Civic",2019
-"30",40900,"JDM","NE","Nebraska","Toyota","Sienna",2014
-"31",105000,"JDM","NH","New Hampshire","Nissan","Frontier",2008
-"32",71495,"JDM","NJ","New Jersey","Lexus","Lc",2019
-"33",65500,"JDM","NM","New Mexico","Toyota","Tacoma Trd Pro",2020
-"34",65000,"JDM","NV","Nevada","Toyota","Tundra",2019
-"35",250000,"JDM","NY","New York","Nissan","Xterra Se",2001
-"36",79977,"JDM","OH","Ohio","Nissan","Gt-R",2009
-"37",68991,"JDM","OK","Oklahoma","Nissan","Gt-R",2016
-"38",69155,"JDM","OR","Oregon","Lexus","Gx570",2018
-"39",79977,"JDM","PA","Pennsylvania","Nissan","Gt-R",2009
-"40",46590,"JDM","RI","Rhode Island","Toyota","Tundra Crewmax 1794",2018
-"41",73250,"JDM","SC","South Carolina","Nissan","Gt-R",2017
-"42",40990,"JDM","SD","South Dakota","Subaru","Ascent",2020
-"43",58999,"JDM","TN","Tennessee","Lexus","Lx",2017
-"44",1495000,"JDM","TX","Texas","Lexus","Is 250",2014
-"45",79900,"JDM","UT","Utah","Lexus","Lc 500",2018
-"46",52000,"JDM","VA","Virginia","Toyota","Sequoia Platinum",2019
-"47",73250,"JDM","VT","Vermont","Nissan","Gt-R",2017
-"48",62999,"JDM","WA","Washington","Toyota","4runner Trd Pro 4x4 Gas",2020
-"49",47750,"JDM","WI","Wisconsin","Toyota","Tundra",2016
-"50",35000,"JDM","WV","West Virginia","Subaru","Wrx Sti",2019
-"51",43999,"JDM","WY","Wyoming","Toyota","Tundra",2018
-"52",79990,"Non-JDM","AK","Alaska","Ford","E-150",2014
-"53",79989,"Non-JDM","AL","Alabama","Cadillac","Escalade Esv Platinum",2020
-"54",124975,"Non-JDM","AR","Arkansas","Audi","R8 V10",2017
-"55",239500,"Non-JDM","AZ","Arizona","Ferrari","488 Spider",2018
-"56",479500,"Non-JDM","CA","California","Chrysler","Pt Cruiser",2009
-"57",150000,"Non-JDM","CO","Colorado","Ram","3500",2020
-"58",89950,"Non-JDM","CT","Connecticut","Cadillac","Cts",2019
-"59",115000,"Non-JDM","DC","District of Columbia","Chevrolet","Corvette",2020
-"60",58750,"Non-JDM","DE","Delaware","Chevrolet","Corvette",1962
-"61",999000,"Non-JDM","FL","Florida","Mercedes-benz","Amg G 63",2017
-"62",72500,"Non-JDM","GA","Georgia","GMC","Savana G2500",2017
-"63",8675309,"Non-JDM","IA","Iowa","Chevrolet","Monte Carlo Ls",2002
-"64",198900,"Non-JDM","ID","Idaho","Audi","R8 Quattro 5.2l V10 Awd Per",2020
-"65",189500,"Non-JDM","IL","Illinois","Mercedes-benz","G-Class",2017
-"66",1299700,"Non-JDM","IN","Indiana","Chevrolet","Equinox",2017
-"67",99999,"Non-JDM","KS","Kansas","Dodge","Charger Police",2016
-"68",123946,"Non-JDM","KY","Kentucky","Ford","F350",2003
-"69",184000,"Non-JDM","LA","Louisiana","Volvo","Vnl64t740",2019
-"70",150000,"Non-JDM","MA","Massachusetts","Ram","Sport 1500 4x4",2016
-"71",125000,"Non-JDM","MD","Maryland","Chevrolet","Corvette",1955
-"72",145000,"Non-JDM","ME","Maine","BMW","2002tii",1972
-"73",1299700,"Non-JDM","MI","Michigan","Chevrolet","Equinox",2017
-"74",130000,"Non-JDM","MN","Minnesota","Chrysler","300 G",1961
-"75",125000,"Non-JDM","MO","Missouri","Ford","Mustang Shelby Gt500",2020
-"76",64500,"Non-JDM","MS","Mississippi","Chevrolet","Suburban Premier",2020
-"77",99000,"Non-JDM","MT","Montana","Pontiac","Gto",1970
-"78",124975,"Non-JDM","NC","North Carolina","Audi","R8 V10",2017
-"79",60000,"Non-JDM","ND","North Dakota","Chevrolet","Camaro",2013
-"80",67091,"Non-JDM","NE","Nebraska","Ford","Expedition Limited 4x4",2020
-"81",129995,"Non-JDM","NH","New Hampshire","Ferrari","F430 Spider",2007
-"82",117750,"Non-JDM","NJ","New Jersey","Ferrari","550 Maranello",1999
-"83",124975,"Non-JDM","NM","New Mexico","Audi","R8 V10",2015
-"84",119980,"Non-JDM","NV","Nevada","Chevrolet","Camaro Restomod",1969
-"85",189500,"Non-JDM","NY","New York","Mercedes-benz","G-Class",2017
-"86",129991,"Non-JDM","OH","Ohio","Ferrari","599 Gtb Fiorano",2008
-"87",124975,"Non-JDM","OK","Oklahoma","Audi","R8 V10",2017
-"88",239500,"Non-JDM","OR","Oregon","Ferrari","488 Spider",2018
-"89",235000,"Non-JDM","PA","Pennsylvania","Ferrari","F12 Berlinetta",2016
-"90",79990,"Non-JDM","RI","Rhode Island","Ford","F-650",2018
-"91",119989,"Non-JDM","SC","South Carolina","Chevrolet","Corvette Stingray 3lt",2020
-"92",76250,"Non-JDM","SD","South Dakota","Lincoln","Navigator L",2019
-"93",239500,"Non-JDM","TN","Tennessee","Ferrari","488 Spider",2018
-"94",1111111,"Non-JDM","TX","Texas","Ford","Escape",2007
-"95",149500,"Non-JDM","UT","Utah","Mercedes-benz","Sprinter 2500",2019
-"96",105000,"Non-JDM","VA","Virginia","Chevrolet","Corvette",2020
-"97",89944,"Non-JDM","VT","Vermont","Ford","F-750",2017
-"98",2e+05,"Non-JDM","WA","Washington","Mercedes-benz","Amg G 63",2020
-"99",219995,"Non-JDM","WI","Wisconsin","Ram","1500 Big Horn 4x4",2011
-"100",70000,"Non-JDM","WV","West Virginia","Chevrolet","Silverado 1500",2018
-"101",67923,"Non-JDM","WY","Wyoming","Ford","F-350",2019
+"","StateFull","Price.x","JDM.x","State.x","Manufacturer.x","Model.x","Year.x","Price.y","JDM.y","State.y","Manufacturer.y","Model.y","Year.y"
+"1","Alabama",42888,"JDM","AL","Nissan","Armada",2019,79989,"Non-JDM","AL","Cadillac","Escalade Esv Platinum",2020
+"2","Alaska",24900,"JDM","AK","Toyota","Tacoma",2018,79990,"Non-JDM","AK","Ford","E-150",2014
+"3","Arizona",56995,"JDM","AZ","Toyota","Tundra Lifted Limited Crew Max 4x4 Iforce V8",2019,239500,"Non-JDM","AZ","Ferrari","488 Spider",2018
+"4","Arkansas",55702,"JDM","AR","Toyota","Gr Supra",2020,124975,"Non-JDM","AR","Audi","R8 V10",2017
+"5","California",92021,"JDM","CA","Lexus","Es350",2007,479500,"Non-JDM","CA","Chrysler","Pt Cruiser",2009
+"6","Colorado",63979,"JDM","CO","Toyota","Sienna Se",2017,150000,"Non-JDM","CO","Ram","3500",2020
+"7","Connecticut",47590,"JDM","CT","Toyota","Tacoma Double Cab Trd Pro",2019,89950,"Non-JDM","CT","Cadillac","Cts",2019
+"8","Delaware",43995,"JDM","DE","Acura","Mdx",2020,58750,"Non-JDM","DE","Chevrolet","Corvette",1962
+"9","District of Columbia",50000,"JDM","DC","Lexus","Rx450h",2020,115000,"Non-JDM","DC","Chevrolet","Corvette",2020
+"10","Florida",69900,"JDM","FL","Lexus","Lc500 Coupe",2018,999000,"Non-JDM","FL","Mercedes-benz","Amg G 63",2017
+"11","Georgia",45998,"JDM","GA","Toyota","Tundra",2018,72500,"Non-JDM","GA","GMC","Savana G2500",2017
+"12","Idaho",52999,"JDM","ID","Toyota","Lifted Tundra Platinum",2017,198900,"Non-JDM","ID","Audi","R8 Quattro 5.2l V10 Awd Per",2020
+"13","Illinois",54785,"JDM","IL","Toyota","Gr Supra",2020,189500,"Non-JDM","IL","Mercedes-benz","G-Class",2017
+"14","Indiana",90300,"JDM","IN","Nissan","Gtr",2018,1299700,"Non-JDM","IN","Chevrolet","Equinox",2017
+"15","Iowa",99000,"JDM","IA","Toyota","Tundra",2017,8675309,"Non-JDM","IA","Chevrolet","Monte Carlo Ls",2002
+"16","Kansas",54861,"JDM","KS","Toyota","Gr Supra",2020,99999,"Non-JDM","KS","Dodge","Charger Police",2016
+"17","Kentucky",53980,"JDM","KY","Toyota","Supra Turbo",2020,123946,"Non-JDM","KY","Ford","F350",2003
+"18","Louisiana",68991,"JDM","LA","Nissan","Gt-R",2016,184000,"Non-JDM","LA","Volvo","Vnl64t740",2019
+"19","Maine",55000,"JDM","ME","Toyota",NA,2019,145000,"Non-JDM","ME","BMW","2002tii",1972
+"20","Maryland",47590,"JDM","MD","Toyota","Tacoma Double Cab Trd Pro",2019,125000,"Non-JDM","MD","Chevrolet","Corvette",1955
+"21","Massachusetts",43590,"JDM","MA","Lexus","Rc 300 Coupe 2d",2019,150000,"Non-JDM","MA","Ram","Sport 1500 4x4",2016
+"22","Michigan",50995,"JDM","MI","Toyota","Tundra",2016,1299700,"Non-JDM","MI","Chevrolet","Equinox",2017
+"23","Minnesota",82988,"JDM","MN","Lexus","Lc 500",2018,130000,"Non-JDM","MN","Chrysler","300 G",1961
+"24","Mississippi",41500,"JDM","MS","Toyota","Tundra",2017,64500,"Non-JDM","MS","Chevrolet","Suburban Premier",2020
+"25","Missouri",55702,"JDM","MO","Toyota","Gr Supra",2020,125000,"Non-JDM","MO","Ford","Mustang Shelby Gt500",2020
+"26","Montana",75000,"JDM","MT","Toyota","Tundra",2015,99000,"Non-JDM","MT","Pontiac","Gto",1970
+"27","Nebraska",40900,"JDM","NE","Toyota","Sienna",2014,67091,"Non-JDM","NE","Ford","Expedition Limited 4x4",2020
+"28","Nevada",65000,"JDM","NV","Toyota","Tundra",2019,119980,"Non-JDM","NV","Chevrolet","Camaro Restomod",1969
+"29","New Hampshire",105000,"JDM","NH","Nissan","Frontier",2008,129995,"Non-JDM","NH","Ferrari","F430 Spider",2007
+"30","New Jersey",71495,"JDM","NJ","Lexus","Lc",2019,117750,"Non-JDM","NJ","Ferrari","550 Maranello",1999
+"31","New Mexico",65500,"JDM","NM","Toyota","Tacoma Trd Pro",2020,124975,"Non-JDM","NM","Audi","R8 V10",2015
+"32","New York",250000,"JDM","NY","Nissan","Xterra Se",2001,189500,"Non-JDM","NY","Mercedes-benz","G-Class",2017
+"33","North Carolina",85988,"JDM","NC","Nissan","Gt-R",2017,124975,"Non-JDM","NC","Audi","R8 V10",2017
+"34","North Dakota",38000,"JDM","ND","Honda","Civic",2019,60000,"Non-JDM","ND","Chevrolet","Camaro",2013
+"35","Ohio",79977,"JDM","OH","Nissan","Gt-R",2009,129991,"Non-JDM","OH","Ferrari","599 Gtb Fiorano",2008
+"36","Oklahoma",68991,"JDM","OK","Nissan","Gt-R",2016,124975,"Non-JDM","OK","Audi","R8 V10",2017
+"37","Oregon",69155,"JDM","OR","Lexus","Gx570",2018,239500,"Non-JDM","OR","Ferrari","488 Spider",2018
+"38","Pennsylvania",79977,"JDM","PA","Nissan","Gt-R",2009,235000,"Non-JDM","PA","Ferrari","F12 Berlinetta",2016
+"39","Rhode Island",46590,"JDM","RI","Toyota","Tundra Crewmax 1794",2018,79990,"Non-JDM","RI","Ford","F-650",2018
+"40","South Carolina",73250,"JDM","SC","Nissan","Gt-R",2017,119989,"Non-JDM","SC","Chevrolet","Corvette Stingray 3lt",2020
+"41","South Dakota",40990,"JDM","SD","Subaru","Ascent",2020,76250,"Non-JDM","SD","Lincoln","Navigator L",2019
+"42","Tennessee",58999,"JDM","TN","Lexus","Lx",2017,239500,"Non-JDM","TN","Ferrari","488 Spider",2018
+"43","Texas",1495000,"JDM","TX","Lexus","Is 250",2014,1111111,"Non-JDM","TX","Ford","Escape",2007
+"44","Utah",79900,"JDM","UT","Lexus","Lc 500",2018,149500,"Non-JDM","UT","Mercedes-benz","Sprinter 2500",2019
+"45","Vermont",73250,"JDM","VT","Nissan","Gt-R",2017,89944,"Non-JDM","VT","Ford","F-750",2017
+"46","Virginia",52000,"JDM","VA","Toyota","Sequoia Platinum",2019,105000,"Non-JDM","VA","Chevrolet","Corvette",2020
+"47","Washington",62999,"JDM","WA","Toyota","4runner Trd Pro 4x4 Gas",2020,2e+05,"Non-JDM","WA","Mercedes-benz","Amg G 63",2020
+"48","West Virginia",35000,"JDM","WV","Subaru","Wrx Sti",2019,70000,"Non-JDM","WV","Chevrolet","Silverado 1500",2018
+"49","Wisconsin",47750,"JDM","WI","Toyota","Tundra",2016,219995,"Non-JDM","WI","Ram","1500 Big Horn 4x4",2011
+"50","Wyoming",43999,"JDM","WY","Toyota","Tundra",2018,67923,"Non-JDM","WY","Ford","F-350",2019
