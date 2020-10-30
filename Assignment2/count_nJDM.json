@@ -25,8 +25,12 @@
     "color": {
       "field": "num_nJDM",
       "type": "quantitative",
-      "scale": {"type": "threshold", "domain": [500, 1000, 2000, 4000, 6000]},
-      "legend": null
+      "scale": {
+        "type": "threshold",
+        "domain": [500, 1000, 2000, 4000, 6000],
+        "scheme": "lightgreyred"
+      },
+      "legend": {"format": ".1s"}
     },
     "tooltip": [
       {"field": "properties.name", "type": "nominal", "title": "State"},

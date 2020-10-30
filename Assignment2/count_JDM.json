@@ -25,7 +25,11 @@
     "color": {
       "field": "num_JDM",
       "type": "quantitative",
-      "scale": {"type": "threshold", "domain": [500, 1000, 2000, 4000, 6000]},
+      "scale": {
+        "type": "threshold",
+        "domain": [500, 1000, 2000, 4000, 6000],
+        "scheme": "lightgreyteal"
+      },
       "legend": {"format": ".1s"}
     },
     "tooltip": [
