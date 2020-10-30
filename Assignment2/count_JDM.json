@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "Number of Used JDM Car Craigslist Listings in USA ",
+  "width": 800,
+  "height": 600,
+  "data": {
+    "url": "https://raw.githubusercontent.com/NathanBuii/FIT3179/main/usa.topojson",
+    "format": {"type": "topojson", "feature": "states"}
+  },
+  "transform": [
+    {
+      "lookup": "properties.name",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/NathanBuii/FIT3179/main/Assignment2/jdmCount.csv"
+        },
+        "key": "StateFull",
+        "fields": ["num_JDM"]
+      }
+    }
+  ],
+  "projection": {"type": "albersUsa"},
+  "mark": {"type": "geoshape"},
+  "encoding": {
+    "color": {
+      "field": "num_JDM",
+      "type": "quantitative",
+      "scale": {"type": "threshold", "domain": [500, 1000, 2000, 4000, 6000]},
+      "legend": {"format": ".1s"}
+    },
+    "tooltip": [
+      {"field": "properties.name", "type": "nominal", "title": "State"},
+      {"field": "num_JDM", "type": "quantitative"}
+    ]
+  },
+  "config": {}
+}
