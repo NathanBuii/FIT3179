@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "title": "Number of Used JDM Car Craigslist Listings in USA ",
-  "width": 800,
-  "height": 600,
+  "width": 500,
+  "height": 300,
   "data": {
     "url": "https://raw.githubusercontent.com/NathanBuii/FIT3179/main/usa.topojson",
     "format": {"type": "topojson", "feature": "states"}
