@@ -39,7 +39,7 @@
     "tooltip": [
       {"field": "Manufacturer", "type": "nominal"},
       {"field": "Model", "type": "nominal"},
-      {"field": "Year", "type": "quantitative"},
+      {"field": "Year", "type": "temporal"},
       {"field": "Price", "type": "quantitative", "format": ","},
       {"field": "Condition", "type": "nominal"}
     ],
