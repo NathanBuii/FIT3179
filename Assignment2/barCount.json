@@ -11,7 +11,7 @@
     "color": {
       "field": "a",
       "type": "nominal",
-      "scale": {"domain": ["JDM", "Non-JDM"], "range": ["teal", "#fc8d62"]},
+      "scale": {"domain": ["JDM", "Non-JDM"], "range": ["#53B5E2", "#fc8d62"]},
       "legend": null
     }
   },
