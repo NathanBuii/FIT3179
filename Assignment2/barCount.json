@@ -11,7 +11,7 @@
       "field": "b",
       "type": "quantitative",
       "scale": {"padding": 10},
-      "title": "Number of Listings"
+      "title": null
     },
     "color": {
       "field": "a",
