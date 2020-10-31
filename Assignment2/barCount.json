@@ -6,8 +6,13 @@
   "description": "Bar chart with text labels. Apply scale padding to make the frame cover the labels.",
   "data": {"values": [{"a": "JDM", "b": 64621}, {"a": "Non-JDM", "b": 167316}]},
   "encoding": {
-    "y": {"field": "a", "type": "nominal"},
-    "x": {"field": "b", "type": "quantitative", "scale": {"padding": 10}},
+    "y": {"field": "a", "type": "nominal", "title": null},
+    "x": {
+      "field": "b",
+      "type": "quantitative",
+      "scale": {"padding": 10},
+      "title": "Number of Listings"
+    },
     "color": {
       "field": "a",
       "type": "nominal",
