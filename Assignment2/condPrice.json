@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "width": 400,
   "height": 200,
-  "title": "Car Condition by Year",
+  "title": null,
   "data": {
     "url": "https://dl.dropbox.com/s/2xd2xtehc8etf2c/vehicles_clean.csv",
     "format": {"type": "csv"}
@@ -24,8 +24,18 @@
   ],
   "mark": {"type": "point", "strokeOpacity": 0.2},
   "encoding": {
-    "x": {"field": "Year", "type": "quantitative", "scale": {"zero": false}},
-    "y": {"field": "Price", "type": "quantitative", "scale": {"type": "log"}},
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "scale": {"zero": false},
+      "title": "Model Year"
+    },
+    "y": {
+      "field": "Price",
+      "type": "quantitative",
+      "scale": {"type": "log"},
+      "title": "Price ($USD)"
+    },
     "tooltip": [
       {"field": "Manufacturer", "type": "nominal"},
       {"field": "Model", "type": "nominal"},
@@ -36,7 +46,7 @@
     "color": {
       "field": "JDM",
       "type": "nominal",
-      "scale": {"domain": ["JDM", "Non-JDM"], "range": ["#53B5E2", "#fc8d62"]}
+      "scale": {"domain": ["JDM", "Non-JDM"], "range": ["#53b5e2", "#fc8d62"]}
     },
     "facet": {
       "field": "Condition",
