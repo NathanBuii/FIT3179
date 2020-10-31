@@ -58,17 +58,37 @@
    <!-- pure grid group -->
     <div class="pure-g">
       <div class="pure-u-1-1">
-        <h1>Multiple Visualisations</h1>
-        <p>This page demonstrates how you can use pure.css grid for your layout.</p>
+        <h1>The Japanese Domestic Market (JDM) Car Scene in USA, Seen Through Craigslist</h1>
+        <p>With the massive impact of The Fast and Furious and Initial D franchises in the 90s, the tuner scene in the USA exploded in popularity. Legendary cars like the Nissan Skyline, Toyota Supra and Mazda RX-7 are coveted for their aesthetic and build potential around the world. This visualisation will explore the JDM car market within the USA as shown through over 200,000 Craigslist used car listings (pre September 2020). </p>
       </div>
     </div>
   <!-- end pure grid group -->
+
+      <!-- pure grid group -->
+      <div class="pure-g">
+        <div class="pure-u-1-1">
+          <div class="description description-left">
+            <h2>What's the Distribution of JDM Cars in the USA</h2>
+          </div>
+        </div>
+    </div>
+    <!-- end pure grid group -->
+    <!-- pure grid group -->
+    <div class="pure-g">
+        <div class="pure-u-1-2">
+          <div id="count_jdm" class="vis-container"></div>
+        </div>
+        <div class="pure-u-2-2">
+          <div id="count_njdm" class="vis-container"></div>
+        </div>
+    </div>
+    <!-- end pure grid group -->
 
     <!-- pure grid group -->
     <div class="pure-g">
         <div class="pure-u-1-3">
           <div class="description description-left">
-            <h2>This is the first section</h2>
+            <h2>What's the Distribution of JDM Cars in the USA</h2>
             <p>The first column is used for description while the next two columns are merged and used for visualisation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat sed. </p>
           </div>
         </div>
@@ -121,22 +141,39 @@
   </div> <!-- end page -->
    
 <script type="text/javascript">
-  var specVis1 = "./normalised-stacked-bars-responsive.json";
-  var specVis2= "./line-chart-responsive.json";
-
-  vegaEmbed('#vis1', specVis1, {"actions": false}).then(function(result) {
+  var vis1 = "count_JDM.json";
+  var vis2 = "count_nJDM.json";
+  var vis3 = "barCount.json";
+  var vis4 = "condPrice.json";
+  var vis5 = "jdmBoxplot.json";
+  var vis6 = "jdmAvgPrice.json";
+  var vis7 = "jdmTopAvg.json";
+  
+  vegaEmbed('#count_jdm', vis1).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
   
-   vegaEmbed('#vis2', specVis2, {"actions": false}).then(function(result) {
+  vegaEmbed('#count_njdm', vis2).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
-
-  vegaEmbed('#vis3', specVis1, {"actions": false}).then(function(result) {
+  
+  vegaEmbed('#bar_count', vis3).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
-
-  vegaEmbed('#vis4', specVis2, {"actions": false}).then(function(result) {
+  
+  vegaEmbed('#scatter_plot', vis4).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
+  vegaEmbed('#jdm_boxplot', vis5).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);  
+  
+  vegaEmbed('#jdm_avgprice', vis6).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+ 
+  vegaEmbed('#jdm_topavg', vis7).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>
