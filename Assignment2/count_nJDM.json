@@ -30,7 +30,7 @@
         "domain": [500, 1000, 2000, 4000, 6000],
         "scheme": "lightgreyred"
       },
-      "legend": {"format": ".1s", "title": "No. of Non-JDM Cars"}
+      "legend": {"format": ".1s", "title": null}
     },
     "tooltip": [
       {"field": "properties.name", "type": "nominal", "title": "State"},
