@@ -22,7 +22,10 @@
     {"filter": "JDM_selection == null || datum.JDM == JDM_selection"},
     {"filter": "datum.Condition != 'NA'"}
   ],
-  "mark": {"type": "point", "strokeOpacity": 0.2},
+  "selection": {
+    "JDM_highlight": {"type": "single", "fields": ["JDM"], "bind": "legend"}
+  },
+  "mark": {"type": "point", "strokeOpacity": 0.1},
   "encoding": {
     "x": {
       "field": "Year",
@@ -35,6 +38,10 @@
       "type": "quantitative",
       "scale": {"type": "log"},
       "title": "Price ($USD)"
+    },
+    "opacity": {
+      "condition": {"selection": "JDM_highlight", "value": 0.3},
+      "value": 0
     },
     "tooltip": [
       {"field": "Manufacturer", "type": "nominal"},
