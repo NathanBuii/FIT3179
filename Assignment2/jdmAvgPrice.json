@@ -76,7 +76,7 @@
           "type": "quantitative",
           "scale": {
             "type": "threshold",
-            "domain": [20, 100, 500, 1000],
+            "domain": [10, 100, 500, 1000],
             "range": [15, 50, 100, 300, 500]
           }
         },
