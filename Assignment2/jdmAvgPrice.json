@@ -4,10 +4,10 @@
   "height": 400,
   "title": "Price Distribution by JDM Manufacturer",
   "data": {
-    "url": "https://raw.githubusercontent.com/NathanBuii/FIT3179/main/Assignment2/vehicles_clean_SMALL.csv"
+    "url": "https://raw.githubusercontent.com/NathanBuii/FIT3179/main/Assignment2/highest_avg.csv"
   },
   "transform": [
-    {"filter": "datum.Year > 1980 && datum.JDM == 'JDM'"},
+    {"filter": "datum.Year > 1980"},
     {"timeUnit": "year", "field": "Year", "as": "year"},
     {
       "window": [{"op": "mean", "field": "Price", "as": "Average_Price"}],
@@ -57,6 +57,15 @@
             ]
           }
         },
+        "size": {
+          "field": "Count",
+          "type": "quantitative",
+          "scale": {
+            "type": "threshold",
+            "domain": [20, 100, 500, 1000],
+            "range": [15, 50, 100, 300, 500]
+          }
+        },
         "opacity": {
           "condition": {"selection": "continent_highlight", "value": 0.3},
           "value": 0
@@ -64,9 +73,8 @@
         "tooltip": [
           {"field": "Manufacturer", "type": "nominal"},
           {"field": "Model", "type": "nominal"},
-          {"field": "Year", "type": "quantitative"},
-          {"field": "Price", "type": "quantitative", "format": ","},
-          {"field": "Condition", "type": "nominal"}
+          {"field": "Price", "type": "quantitative", "format": ".2f"},
+          {"field": "Count", "type": "quantitative"}
         ]
       }
     },
