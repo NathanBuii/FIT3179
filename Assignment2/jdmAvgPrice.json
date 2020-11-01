@@ -6,19 +6,6 @@
   "data": {
     "url": "https://raw.githubusercontent.com/NathanBuii/FIT3179/main/Assignment2/highest_avg.csv"
   },
-  "params": [
-    {
-      "name": "Count_Above",
-      "value": 0,
-      "bind": {
-        "input": "range",
-        "min": 0,
-        "max": 1000,
-        "step": 100,
-        "name": "Minimum Number of Models: "
-      }
-    }
-  ],
   "transform": [
     {"filter": "datum.Year > 1980"},
     {"timeUnit": "year", "field": "Year", "as": "year"},
@@ -27,8 +14,7 @@
       "sort": [{"field": "Year", "order": "ascending"}],
       "ignorePeers": false,
       "frame": [null, 0]
-    },
-    {"filter": "datum.Count > Count_Above"}
+    }
   ],
   "layer": [
     {
@@ -81,18 +67,13 @@
           }
         },
         "opacity": {
-          "condition": {"selection": "continent_highlight", "value": 0.3},
+          "condition": {"selection": "continent_highlight", "value": 0.4},
           "value": 0
         },
         "tooltip": [
           {"field": "Manufacturer", "type": "nominal"},
           {"field": "Model", "type": "nominal"},
-          {
-            "field": "Price",
-            "type": "quantitative",
-            "format": ".2f",
-            "title": "Average Model Price"
-          },
+          {"field": "Price", "type": "quantitative", "format": ".2f"},
           {"field": "Count", "type": "quantitative"}
         ]
       }
@@ -104,7 +85,7 @@
         "y": {
           "field": "Average_Price",
           "type": "quantitative",
-          "title": "Average Price ($USD)"
+          "title": "Price"
         }
       }
     }
